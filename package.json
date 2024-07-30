@@ -1,0 +1,12 @@
+{
+  "name": "xogame",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc scripts/script.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

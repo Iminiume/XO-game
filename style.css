@@ -1,0 +1,85 @@
+html,
+body {
+  display: flex;
+
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+
+  box-sizing: border-box;
+  font-size: 16px;
+  background-color: rgb(196, 255, 255);
+}
+
+button {
+  border: none;
+  cursor: pointer;
+}
+
+.flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.border-radius {
+  border-radius: 0.25rem;
+}
+
+.container {
+  flex-direction: column;
+
+  gap: 2rem;
+  width: 75%;
+  height: 75%;
+  margin: auto;
+}
+
+#board {
+  display: grid;
+  grid-template-columns: repeat(3, 10rem);
+  grid-template-rows: repeat(3, 10rem);
+
+  font-size: 2.5rem;
+}
+
+.cell {
+  font-size: 3rem;
+  cursor: pointer;
+  transition: background-color 0.25s ease-in-out;
+}
+
+.cell:nth-child(2),
+.cell:nth-child(8) {
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+}
+
+.cell:nth-child(4),
+.cell:nth-child(6) {
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+}
+
+.cell:nth-child(5) {
+  border: 1px solid black;
+}
+
+.cell:hover {
+  background-color: rgb(132, 253, 253);
+}
+
+#reset-btn {
+  font-size: 1.5rem;
+  padding: 0.25rem 1.5rem;
+
+  color: white;
+  background-color: rgb(255, 76, 76);
+
+  transition: background-color 0.25s ease-in-out;
+}
+
+#reset-btn:hover {
+  background-color: rgb(255, 131, 131);
+}
